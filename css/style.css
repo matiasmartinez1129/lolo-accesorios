@@ -1,0 +1,370 @@
+@import "tailwindcss";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-header img{
+    width: 100px;
+}
+/*MENU MOBILE*/
+.main-header {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    background-color: #023B27;
+    border-bottom: 3px solid #fff;
+}
+.navbar-toggler{
+    font-size: 15px;
+    background-color: #fff;
+}
+.offcanvas-title{
+    color: #fff;
+}
+.btn-close{
+    background-color: #fff;
+}
+.offcanvas{
+    background-color: #023B27;
+}
+.main-header i {
+    
+    color: #fff;
+}
+
+.cart-count{
+    background-color: red;
+    color: #fff;
+    border-radius: 60%;
+    padding: 2px;
+    
+}
+.ul-content-mobile{
+    padding-top: 15px;
+}
+.li-content-mobile{
+    list-style-type: none;
+    padding-top: 18px;
+}
+.li-content-mobile a {
+    text-decoration: none;
+    color: #fff;
+}
+.li-content-mobile a:hover{
+    color: gray;
+}
+
+/*MENU DESCKTOP*/
+
+.li-content{
+    list-style-type: none;
+    padding-left: 60px;
+}
+.li-content a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 100;
+    transition: 0.3s;
+}
+.li-content a:hover{
+    color: gray;
+}
+
+/*CAROUSEL*/
+.section1-bg{
+    background-color: #F5F5DC;
+}
+.carousel-inner{
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.carousel-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*CAROUSEL PRODUCTOS TENDENCIAS*/
+.bg-slider{
+    background-color: #F5F5DC;
+}
+.carousel-group {
+    padding: 0 50px; 
+}
+
+.producto-card {   
+    padding: 15px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.producto-card img {
+    width: 100%;
+    height: 180px; 
+    object-fit: cover; 
+    border-radius: 3px;
+}
+.producto-card h3{
+    color: #023B27;
+}
+.producto-card p{
+    color: #023B27;
+}
+.producto-card button{
+    background-color: #023B27;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.producto-card button:hover{
+    background-color: #035235;
+}
+/*SECTION COMUNICADO*/
+.container-comunicado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+    background-color: #F5F5DC;
+    
+}
+.comunicado{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.comunicado i {
+    font-size: 35px;
+    color: #023B27;
+    padding: 10px;
+}
+.redes-icon i{
+    padding-left: 20px;
+    
+}
+.linear{
+    border-left: 0.5px solid gray ;
+    border-right: 0.5px solid gray;
+}
+.comunicado h3{
+    font-size: 17px;
+    padding: 10px;
+}
+.comunicado p{
+    padding: 18px;
+}
+
+/*SECTION PRODUCTOS*/
+.h2-product{
+    text-align: center;
+    padding-top: 75px;
+    border-bottom: 1px solid #eee;
+}
+.container-productos{
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+   
+}
+.producto{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    
+}
+.producto img{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+.producto h3 {
+    margin: 5px 0;
+    font-size: 1.1em;
+    min-height: 2em; 
+}
+.producto p {
+    font-weight: bold;
+    color: #023B27;
+    margin-bottom: 15px;
+    margin-top: auto;
+}
+.producto button {
+    background-color: #023B27;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.producto button:hover {
+    background-color: #035235;
+}
+
+/*PRODUCTOS SHOP*/
+.shop-product-section{
+    background-color: #F5F5DC;
+}
+.shop{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+}
+.info-product-content{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 40%;
+   padding: 20px;
+}
+.info-product-content h2{
+    color: #023B27;
+    padding: 10px;
+}
+.shop img{
+     width: 350px;
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+.info-product-content span{
+    font-size: 32px;
+    color: #023B27;
+    padding-bottom: 10px;
+}
+.info-product-content h3{
+    font-size: 19px;
+}
+.info-product-content button{
+    background-color: #023B27;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+.info-product-content button:hover{
+    background-color: #035235;
+}
+
+.foot p{
+    text-align: center;
+    padding-top: 50px;
+}
+/*MEDIAS*/
+@media (min-width: 847px){
+    .navbar{
+        display: none;
+    }
+    .main-header{
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 40px;
+    }
+    .cart-icon{
+        position: static;
+    }
+    .ul-content{
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .main-header i {
+        padding: 0;
+        margin-left: 20px;
+    }
+    
+}
+@media (max-width: 846px){
+    .main-header{
+        justify-content: space-between;
+    }
+    .ul-content{
+        display: none;
+    }
+    .carousel-inner{
+        width: 100% !important;
+        max-height: 300px;
+    }
+    .carousel-item img{
+        height: 300px;
+    }
+    .container-comunicado{
+        flex-direction: column;
+    }
+    .comunicado{
+        border-bottom: 1px solid gray;
+    }
+    .linear{
+        border-left: none;
+        border-right: none;
+       
+    }
+    .comunicado h3 {
+        font-size: 16px;
+    }
+    .comunicado p{
+        font-size: 12px;
+        
+    }
+    .container-productos {
+       display: grid;
+       grid-template-columns: 1fr; 
+       gap: 20px; 
+       padding: 20px;
+       margin: 0 auto;
+    }
+
+    .shop{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .info-product-content{
+        width: auto;
+        align-items: center;
+    }
+   
+    .producto-card{
+    display: none;
+ }
+ .dsp-none{
+    display: none;
+ }
+    .carousel-none{
+        display: none;
+    }
+}
+@media (max-width: 365px){
+    .info-product-content h2{
+        font-size: 22px;
+    }
+}
