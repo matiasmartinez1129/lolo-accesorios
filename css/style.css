@@ -17,6 +17,9 @@
     padding: 20px;
     background-color: #C8B497;
     border-bottom: 3px solid #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 .navbar-toggler{
     font-size: 15px;
@@ -334,6 +337,94 @@
     background-color: #C8B497;
 }
 
+.promo{
+    background-color: #8a6f5a;
+    color: #fff;
+    margin-top: 120px;
+    padding: 20px;
+    overflow: hidden;
+}
+.banner{
+    display: flex;
+    width: max-content;
+    animation: banner 14s linear infinite;
+}
+.banner span{
+    white-space: nowrap;
+    padding-right: 50px; 
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/*BENEFICIOS*/
+.container-beneficios{
+    padding-top: 120px;
+    display: flex;
+    justify-content: center;
+}
+.content-contact{
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+.img-contact{
+    width: 50%;
+}
+.img-contact img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-top-left-radius: 20px;
+}
+.fondo{
+    width: 50%;
+    background-color: #8a6f5a;
+    padding: 20px;
+    border-end-end-radius: 20px;
+}
+.fondo h2{
+    text-align: center;
+    color: #fff;
+}
+.beneficios h2{
+    color: #fff;
+    text-align: center;
+}
+
+.card-beneficios{
+    display: flex;
+    justify-content: center;
+}
+.card-beneficios ul{
+    color: #fff;
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.contact h3{
+    color: #fff;
+    font-size: 24px;
+}
+.contact a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #C8B497;
+    margin-top: 45px;
+    padding: 10px;
+    font-weight: 600;
+    
+}
+
 /*SECTION COMUNICADO*/
 .container-comunicado{
     display: flex;
@@ -374,12 +465,24 @@
 }
 
 /*FOOTER*/
+.foot{
+    background-color: #F5F5DC;
+}
 .foot p{
     text-align: center;
     padding-top: 50px;
 }
-/*MEDIAS*/
 
+/*ANIMACIONES*/
+@keyframes banner {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+/*MEDIAS*/
 @media (max-width: 900px){
     .container-productos{
         grid-template-columns: 1fr;
@@ -464,7 +567,31 @@
         display: none;
     }
 }
+@media (max-width: 768px) {
 
+    .content-contact {
+        flex-direction: column;
+    }
+
+    .img-contact,
+    .fondo {
+        width: 100%;
+    }
+
+    .img-contact img {
+        border-radius: 20px 20px 0 0;
+    }
+
+    .fondo {
+        border-radius: 0 0 20px 20px;
+    }
+
+    .contact h3 {
+        text-align: center;
+        font-size: 20px;
+    }
+    
+}
 @media (max-width: 615px){
     .grid-area{
         grid-template-columns: 1fr;
@@ -472,10 +599,16 @@
     .filters{
         width: 100%;
     }
+    
 }
-
+@media (max-width: 388px){
+    .card-beneficios ul {
+        font-size: 18px;
+    }
+}
 @media (max-width: 365px){
     .info-product-content h2{
         font-size: 22px;
     }
+    
 }

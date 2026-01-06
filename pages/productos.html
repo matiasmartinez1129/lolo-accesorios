@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <script src="https://kit.fontawesome.com/83bd053065.js" crossorigin="anonymous"></script>
+    <link href="../src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+     <header class="main-header">
+        <nav class="navbar">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="ul-mobile">
+           <ul class="ul-content-mobile">
+            <li class="li-content-mobile"><a href="../index.html">Inicio</a></li>
+            <li class="li-content-mobile"><a href="productos.html">Nuestros Productos</a></li>
+            <li class="li-content-mobile"><a href="#">¿Quiénes Somos?</a></li>
+            <li class="li-content-mobile"><a href="#">Contacto</a></li>
+           </ul>
+      </div>
+    
+    </div>
+  </div>
+</nav>
+      
+    
+     
+        <a href="index.html"><img src="../img/logo-lolo-bg.png" alt="Logo"></a>
+        
+        
+        <ul class="ul-content">
+            <li class="li-content"><a href="../index.html">Inicio</a></li>
+            <li class="li-content"><a href="productos.html">Nuestros Productos</a></li>
+            <li class="li-content"><a href="#">¿Quiénes Somos?</a></li>
+            <li class="li-content"><a href="#">Contacto</a></li>
+        </ul>
+        
+    
+        <div class="cart-icon">
+         <i class="fa-solid fa-cart-shopping"></i>
+         
+             <span class="cart-count">0</span>
+         
+        </div>
+        
+    </header>
+
+
+
+    <section class="grid-area">
+<aside class="filters">
+
+    
+    <div class="filter-section">
+        <h3>Buscador</h3>
+        <input type="text" placeholder="Buscar productos..." class="filter-search">
+    </div>
+
+    
+    <div class="filter-section">
+        <h3>Categorías</h3>
+        <label><input type="checkbox" name="categoria" value="collares"> Collares</label>
+        <label><input type="checkbox" name="categoria" value="aros"> Aros</label>
+        <label><input type="checkbox" name="categoria" value="pulseras"> Pulseras</label>
+        <label><input type="checkbox" name="categoria" value="atrapasoles"> Atrapasoles</label>
+    </div>
+
+  
+    <div class="filter-section">
+        <h3>Precio</h3>
+
+       
+        <input type="range" min="0" max="50000" class="price-slider">
+
+        
+        <div class="price-inputs">
+            <input type="number" placeholder="Mín" class="price-min">
+            <input type="number" placeholder="Máx" class="price-max">
+        </div>
+
+    </div>
+
+   
+    <div class="filter-section">
+        <h3>Disponibilidad</h3>
+        <label><input type="checkbox" value="stock"> En stock</label>
+        <label><input type="checkbox" value="oferta"> En oferta</label>
+        <label><input type="checkbox" value="nuevo"> Nuevos ingresos</label>
+        <label><input type="checkbox" value="limitado"> Edición limitada</label>
+    </div>
+
+    <button class="apply-price">Aplicar</button>
+
+</aside>
+
+
+
+<main>
+        <h2 class="h2-product">NUESTROS PRODUCTOS</h2>
+<section class="container-productos">
+
+   <!-- COLLARES -->
+        <div class="producto" id="collares">
+            <a href="aura-maritima.html"><img src="../img/collar-1.jpg" alt="Aura Marítima"></a>
+            <h3>Aura Marítima</h3>
+            <p>$12000</p>
+            <a href="aura-maritima.html"><button class="btn-ver">Ver Más</button></a>
+            <button class="btn-agregar">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <a href="susurro-alba.html"><img src="../img/collar-2.jpg" alt="Susurro del Alba"></a>
+            <h3>Susurro del Alba</h3>
+            <p>$15000</p>
+            <a href="susurro-alba.html"><button class="btn-ver">Ver Más</button></a>
+            <button class="btn-agregar">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <a href="encanto-maritimo.html"><img src="../img/collar-3.jpg" alt="Encanto Marítimo"></a>
+            <h3>Encanto Marítimo</h3>
+            <p>$13000</p>
+            <a href="encanto-maritimo.html"><button class="btn-ver">Ver Más</button></a>
+            <button class="btn-agregar">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <a href="mar-estrellado.html"><img src="../img/collar-4.jpg" alt="Mar Estrellado"></a>
+            <h3>Mar Estrellado</h3>
+            <p>$11000</p>
+            <a href="mar-estrellado.html"><button class="btn-ver">Ver Más</button></a>
+            <button class="btn-agregar">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <a href="bailando-estrellas.html"><img src="../img/collar-5.jpg" alt="Bailando en Estrellas"></a>
+            <h3>Bailando en Estrellas</h3>
+            <p>$16000</p>
+            <a href="bailando-estrellas.html"><button class="btn-ver">Ver Más</button></a>
+            <button class="btn-agregar">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <a href="piedra-estrellada.html"><img src="../img/collar-6.jpg" alt="Piedra Estrellada"></a>
+            <h3>Piedra Estrellada</h3>
+            <p>$15000</p>
+            <a href="piedra-estrellada.html"><button class="btn-ver">Ver Más</button></a>
+            <button class="btn-agregar">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <a href="esencia-eclectica.html"><img src="../img/collar-7.jpg" alt="Esencia Ecléctica"></a>
+            <h3>Esencia Ecléctica</h3>
+            <p>$17000</p>
+            <a href="esencia-eclectica.html"><button class="btn-ver">Ver Más</button></a>
+            <button class="btn-agregar">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <a href="relicario-coral.html"><img src="../img/collar-8.jpg" alt="Relicario de Coral"></a>
+            <h3>Relicario de Coral</h3>
+            <p>$12000</p>
+            <a href="relicario-coral.html"><button class="btn-ver">Ver Más</button></a>
+            <button class="btn-agregar">Agregar al carrito</button>
+        </div>
+
+        <!-- PULSERAS -->
+        <div class="producto" id="pulseras">
+            <a href="perlas-destino.html"><img src="../img/puslera-1.JPG" alt="Perlas del Destino"></a>
+            <h3>Perlas del Destino</h3>
+            <p>$5000</p>
+            <a href="perlas-destino.html"><button class="btn-ver">Ver Más</button></a>
+            <button class="btn-agregar">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <a href="senda-viajero.html"><img src="../img/pulsera-2.jpg" alt="Senda del Viajero"></a>
+            <h3>Senda del Viajero</h3>
+            <p>$6000</p>
+            <a href="senda-viajero.html"><button class="btn-ver">Ver Más</button></a>
+            <button class="btn-agregar">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <a href="manta-de-cuarzo.html"><img src="../img/pulsera-3.jpg" alt="Mantra de Cuarzo"></a>
+            <h3>Mantra de Cuarzo</h3>
+            <p>$5000</p>
+            <a href="manta-de-cuarzo.html"><button class="btn-ver">Ver Más</button></a>
+            <button class="btn-agregar">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <a href="eslabon-arena.html"><img src="../img/pulsera-4.jpg" alt="Eslabón de Arena"></a>
+            <h3>Eslabón de Arena</h3>
+            <p>$5000</p>
+            <a href="eslabon-arena.html"><button class="btn-ver">Ver Más</button></a>
+            <button class="btn-agregar">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <a href="puño-macrame.html"><img src="../img/pulsera-5.jpg" alt="Puño de Macramé"></a>
+            <h3>Puño de Macramé</h3>
+            <p>$5500</p>
+            <a href="puño-macrame.html"><button class="btn-ver">Ver Más</button></a>
+            <button class="btn-agregar">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <a href="camino-turquesa.html"><img src="../img/pulsera-6.jpg" alt="Caminos de Turquesa"></a>
+            <h3>Caminos de Turquesa</h3>
+            <p>$7000</p>
+            <a href="camino-turquesa.html"><button class="btn-ver">Ver Más</button></a>
+            <button class="btn-agregar">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <a href="onda-calma.html"><img src="../img/pulsera-7.jpg" alt="Onda de la Calma"></a>
+            <h3>Onda de la Calma</h3>
+            <p>$5000</p>
+            <a href="onda-calma.html"><button class="btn-ver">Ver Más</button></a>
+            <button class="btn-agregar">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <a href="arbol-vida.html"><img src="../img/pulsera-8.jpg" alt="Árbol de la Vida"></a>
+            <h3>Árbol de la Vida</h3>
+            <p>$5000</p>
+            <a href="arbol-vida.html"><button class="btn-ver">Ver Más</button></a>
+            <button class="btn-agregar">Agregar al carrito</button>
+        </div>
+
+        <!-- ATRAPASOLES -->
+        <div class="producto" id="deco">
+            <a href="atrapasol-cuantico.html"><img src="../img/atrapasol-1.jpg" alt="Atrapasol Cúantico"></a>
+            <h3>Atrapasol Cúantico</h3>
+            <p>$9000</p>
+            <a href="atrapasol-cuantico.html"><button class="btn-ver">Ver Más</button></a>
+            <button class="btn-agregar">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <a href="atrapasol-divino.html"><img src="../img/atrapasol-2.jpg" alt="Atrapasol Divino"></a>
+            <h3>Atrapasol Divino</h3>
+            <p>$12000</p>
+            <a href="atrapasol-divino.html"><button class="btn-ver">Ver Más</button></a>
+            <button class="btn-agregar">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <a href="atrapasol-solar.html"><img src="../img/atrapasol-3.jpg" alt="Atrapasol Solar"></a>
+            <h3>Atrapasol Solar</h3>
+            <p>$8000</p>
+            <a href="atrapasol-solar.html"><button class="btn-ver">Ver Más</button></a>
+            <button class="btn-agregar">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <a href="atrapasol-esencia.html"><img src="../img/atrapasol-4.jpg" alt="Atrapasol Esencia"></a>
+            <h3>Atrapasol Esencia</h3>
+            <p>$10000</p>
+            <a href="atrapasol-esencia.html"><button class="btn-ver">Ver Más</button></a>
+            <button class="btn-agregar">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <a href="atrapasol-corriente.html"><img src="../img/atrapasol-5.jpg" alt="Atrapasol Corriente"></a>
+            <h3>Atrapasol Corriente</h3>
+            <p>$9000</p>
+            <a href="atrapasol-corriente.html"><button class="btn-ver">Ver Más</button></a>
+            <button class="btn-agregar">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <a href="atrapasol-lunar.html"><img src="../img/atrapasol-6.jpg" alt="Atrapasol Lunar"></a>
+            <h3>Atrapasol Lunar</h3>
+            <p>$9500</p>
+            <a href="atrapasol-lunar.html"><button class="btn-ver">Ver Más</button></a>
+            <button class="btn-agregar">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <a href="atrapasol-floral.html"><img src="../img/atrapasol-7.jpg" alt="Atrapasol Floral"></a>
+            <h3>Atrapasol Floral</h3>
+            <p>$11000</p>
+            <a href="atrapasol-floral.html"><button class="btn-ver">Ver Más</button></a>
+            <button class="btn-agregar">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <a href="atrapasol-estilos.html"><img src="../img/atrapasol-8.jpg" alt="Atrapasol Estilos"></a>
+            <h3>Atrapasol Estilos</h3>
+            <p>$13000</p>
+            <a href="atrapasol-estilos.html"><button class="btn-ver">Ver Más</button></a>
+            <button class="btn-agregar">Agregar al carrito</button>
+        </div>
+
+
+</section>
+</main>
+</section>
+
+
+<footer class="foot">
+        <div class="container-comunicado">
+            <div class="comunicado">
+             <h3>NUESTRAS REDES</h3>
+             <div class="redes-icon">
+              <a href="https://www.instagram.com/__accesorioslolo/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+             <a href="https://www.facebook.com/profile.php?id=61566755421116&locale=es_LA" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+             </div>
+
+             <p>Seguinos para enterarte de los ultimos productos.</p>
+         </div>
+         <div class="comunicado linear">
+          <h3>ENVIOS A TODO EL PAÍS</h3>
+          <i class="fa-solid fa-truck-fast"></i>
+          <p>Entrega inmediata a la puerta de tu casa.</p>
+          
+         </div>
+
+         <div class="comunicado">
+            <h3>COMUNICATE CON NOSOTROS</h3>
+            <i class="fa-brands fa-whatsapp"></i>
+            <p>Hablanos por Whatsapp para lo que necesites.</p>
+         </div>
+
+        </div>
+        <p>Loló Accesorios - Todos los derechos reservados.</p>
+     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
